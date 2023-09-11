@@ -1,27 +1,28 @@
 body {
-  margin: 0;
+  margin: auto 0;
   font-family: system-ui;
-  width: 100%;
+  max-width: 1440px;
 }
 body .hero {
   padding-top: 300px;
   padding-bottom: 370px;
   background-image: url(./images/background-image.png);
   background-position-x: 100%;
-  width: 1280px;
-  height: 150px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
-body .head-hero {
+body .hero .head-hero {
   padding-left: 30px;
   display: flex;
   margin-top: -280px;
 }
-body .nav-span {
+body .hero .head-hero .nav-span {
   padding-left: 250px;
   padding-right: 60px;
 }
-body .nav-link {
+body .hero .head-hero .nav-span .nav-link {
   margin-right: 40px;
   text-decoration: none;
   font-size: 15px;
@@ -29,30 +30,30 @@ body .nav-link {
   font-weight: 600px;
   color: white;
 }
-body .nav-link:hover {
+body .hero .head-hero .nav-span .nav-link:hover {
   color: red;
 }
-body .span-nav {
+body .hero .head-hero .span-nav {
   list-style: none;
   padding: 0px 20px;
 }
-body .button {
+body .hero .head-hero .span-nav .button {
   margin-right: 15px;
   background: rgba(0, 0, 0, 0.2);
   border: 2px solid white;
   border-radius: 15px;
   padding: 10px 35px;
 }
-body .button:hover {
+body .hero .head-hero .span-nav .button:hover {
   background-color: navy;
 }
-body .span-nav-link {
+body .hero .head-hero .span-nav .span-nav-link {
   font-size: 16px;
   font-weight: 500px;
   color: white;
   text-decoration: none;
 }
-body .scholarship-head {
+body .hero .head-hero .scholarship-head {
   position: relative;
   display: flex;
   -webkit-box-align: start;
@@ -60,14 +61,14 @@ body .scholarship-head {
   padding-top: 100px;
   margin-right: 500px;
 }
-body .scholarship-head .h2 {
+body .hero .head-hero .scholarship-head .h2 {
   display: inline-block;
   font-size: 25px;
   transform: scale(1.6);
   color: navy;
   margin-left: 90px;
 }
-body .scholarship-head .dreams {
+body .hero .head-hero .scholarship-head .dreams {
   display: inline-block;
   font-size: 29px;
   color: white;
@@ -75,14 +76,14 @@ body .scholarship-head .dreams {
   margin-top: -15px;
   margin-left: 65px;
 }
-body .scholarship-head .financial-aid {
+body .hero .head-hero .scholarship-head .financial-aid {
   display: inline-block;
   font-size: 20px;
   color: white;
   transform: scale(0.8);
   margin-left: -130px;
 }
-body .scholarship-head .get-started {
+body .hero .head-hero .scholarship-head .get-started {
   display: inline-block;
   background-color: navy;
   border-radius: 25px;
@@ -103,8 +104,6 @@ body .hero-section {
 }
 body .hero-section .general {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-around;
   background-color: white;
   width: 100%;
@@ -161,27 +160,27 @@ body .degree-section {
   flex-direction: row;
   justify-content: space-around;
 }
-body .left-degree_section {
-  width: 50%;
+body .degree-section .left-degree_section {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
   margin-right: 270px;
 }
-body .h3-degree {
+body .degree-section .left-degree_section .h3-degree {
   display: inline-block;
   font-size: 27px;
   transform: scale(1.6);
   color: gray;
 }
-body .p-degree {
+body .degree-section .left-degree_section .p-degree {
   display: inline-block;
   font-size: 25px;
   color: gray;
   transform: scale(1);
 }
-body .find-by_degree {
+body .degree-section .left-degree_section .find-by_degree {
   align-self: center;
   background-color: navy;
   color: white;
@@ -191,7 +190,7 @@ body .find-by_degree {
   padding: 12px;
   margin-top: 40px;
 }
-body .right-degree_section {
+body .degree-section .right-degree_section {
   margin-left: -370px;
 }
 body .achieve-dreams {
@@ -216,19 +215,19 @@ body .achieve-dreams .achieve-right_section {
   align-items: center;
   margin-left: -250px;
 }
-body .achieve-dreams .dreams {
+body .achieve-dreams .achieve-right_section .dreams {
   display: inline-block;
   font-size: 35px;
   color: gray;
   transform: scale(1.2);
 }
-body .achieve-dreams .access {
+body .achieve-dreams .achieve-right_section .access {
   display: inline-block;
   font-size: 25px;
   color: gray;
   transform: scale(1);
 }
-body .achieve-dreams .start {
+body .achieve-dreams .achieve-right_section .start {
   align-self: center;
   background-color: navy;
   color: white;
@@ -329,4 +328,12 @@ body .footer .fa-instagram {
   align-content: center;
   line-height: 25px;
   font-size: 25px;
+  color: rgb(223, 113, 131);
+}
+
+@media screen and (min-width: 768) {
+  .degree-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=style.css.map */

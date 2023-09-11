@@ -1,123 +1,128 @@
 $hover-color: red;
 body {
-    margin: 0;
+    margin: auto 0;
     font-family: system-ui;
-    width: 100%;
+    max-width: 1440px;
 
 .hero {
     padding-top: 300px;
     padding-bottom: 370px;
     background-image: url(./images/background-image.png);
     background-position-x: 100%;
-    // width: 1440px;
-    width: 1280px;
-    height: 150px;
+    // width: 1280px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}
-.head-hero {
-    // max-width: 800px;
-    // margin-left: auto;
-    // margin-right: auto;
-    padding-left: 30px;
-    // padding-right: 1rem;
-    // background-color: aqua;
-    display: flex;
-    margin-top: -280px;
-}
-.nav-span {
-    padding-left: 250px;
-    padding-right: 60px;
-}
-.nav-link {
-    margin-right: 40px;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 22.5px;
-    font-weight: 600px;
-    color: white;
 
-    &:hover {
-        color: $hover-color;
+    .head-hero {
+        // max-width: 800px;
+        // margin-left: auto;
+        // margin-right: auto;
+        padding-left: 30px;
+        // padding-right: 1rem;
+        // background-color: aqua;
+        display: flex;
+        margin-top: -280px;
+
+        .nav-span {
+            padding-left: 250px;
+            padding-right: 60px;
+        
+            .nav-link {
+                margin-right: 40px;
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 22.5px;
+                font-weight: 600px;
+                color: white;
+            
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+
+        .span-nav {
+            // display: inline-block;
+            list-style: none;
+            padding: 0px 20px;
+        
+            .button {
+                margin-right: 15px;
+                background: rgba(0,0,0,0.2);
+                border: 2px solid white;
+                border-radius: 15px;
+                padding: 10px 35px;
+            }
+            .button:hover {
+                background-color: navy;
+            }
+            .span-nav-link {
+                font-size: 16px;
+                font-weight: 500px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .scholarship-head {
+            position: relative;
+            // width: 40%;
+            // align-content: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -webkit-box-align: start;
+         -ms-flex-direction: column;
+         flex-direction: column;
+        //  align-items: center;
+        //  background-color: aqua;
+        //  border: 1px;
+        //  transform: translate(3%, 50%);
+            padding-top: 100px;
+            margin-right: 500px;
+        
+        .h2 {
+            display: inline-block;
+            font-size: 25px;
+            transform: scale(1.6);
+            color: navy;
+            margin-left: 90px;
+        }
+        
+        .dreams {
+            display: inline-block;
+            font-size: 29px;
+            color: white;
+            transform: scale(1.5,);
+            margin-top: -15px;
+            margin-left: 65px; 
+        }
+        
+        .financial-aid {
+            display: inline-block;
+            font-size: 20px;
+            color: white;
+            transform: scale(0.8);
+            margin-left: -130px;
+        }
+        
+        .get-started {
+            display: inline-block;
+            background-color: navy;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            align-self: center;
+            transform: scale(1);
+            margin-left: -580px;
+        }
+        }
     }
-}
-.span-nav {
-    // display: inline-block;
-    list-style: none;
-    padding: 0px 20px;
-}
-
-.button {
-    margin-right: 15px;
-    background: rgba(0,0,0,0.2);
-    border: 2px solid white;
-    border-radius: 15px;
-    padding: 10px 35px;
-}
-.button:hover {
-    background-color: navy;
-}
-.span-nav-link {
-    font-size: 16px;
-    font-weight: 500px;
-    color: white;
-    text-decoration: none;
-}
-
-.scholarship-head {
-    position: relative;
-    // width: 40%;
-    // align-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
- -webkit-box-orient: vertical;
- -webkit-box-direction: normal;
- -webkit-box-align: start;
- -ms-flex-direction: column;
- flex-direction: column;
-//  align-items: center;
-//  background-color: aqua;
-//  border: 1px;
-//  transform: translate(3%, 50%);
-    padding-top: 100px;
-    margin-right: 500px;
-
-.h2 {
-    display: inline-block;
-    font-size: 25px;
-    transform: scale(1.6);
-    color: navy;
-    margin-left: 90px;
-}
-
-.dreams {
-    display: inline-block;
-    font-size: 29px;
-    color: white;
-    transform: scale(1.5,);
-    margin-top: -15px;
-    margin-left: 65px; 
-}
-
-.financial-aid {
-    display: inline-block;
-    font-size: 20px;
-    color: white;
-    transform: scale(0.8);
-    margin-left: -130px;
-}
-
-.get-started {
-    display: inline-block;
-    background-color: navy;
-    border-radius: 25px;
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-    align-self: center;
-    transform: scale(1);
-    margin-left: -580px;
-}
 }
 
 .hero-section {
@@ -133,8 +138,6 @@ body {
 
     .general {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: space-around;
         background-color: white;
         width: 100%;
@@ -200,7 +203,6 @@ body {
                }
 
             }
-    
         }
     }
         
@@ -211,10 +213,11 @@ body {
             margin: 0 10px 100px;
             flex-direction: row;
             justify-content: space-around;
-        }
+
 
         .left-degree_section {
-            width: 50%;
+            // width: 50%;
+            width: 40%;
         //     padding-top: 100px;
                display: -webkit-box;
                display: -ms-flexbox;
@@ -226,7 +229,7 @@ body {
             align-items: center;
             margin-top: 50px;
             margin-right: 270px;
-        }
+        
         .h3-degree {
             display: inline-block;
             font-size: 27px;
@@ -249,12 +252,15 @@ body {
                 padding: 12px;
                 margin-top: 40px;
            }
+        }
+
         .right-degree_section {
 //             margin-top: 70px;
 //             width: 50%;
             // padding-left: 50px;
             margin-left: -370px;
         }
+    }
 
 .achieve-dreams {
     display: flex;
@@ -286,23 +292,23 @@ body {
                 flex-direction: column;
                 align-items: center;
                 margin-left: -250px;
-        }
-
-        .dreams {
+                
+                
+                .dreams {
             display: inline-block;
             font-size: 35px;
             color: gray;
-            transform: scale(1.2,);   
-        }
-
-        .access {
+            transform: scale(1.2,);
+                }
+                
+                .access {
             display: inline-block;
             font-size: 25px;
             color: gray;
-            transform: scale(1,);  
-        }
-
-        .start {
+            transform: scale(1,);
+                }
+                
+                .start {
             align-self: center;
             background-color: navy;
             color:white;
@@ -310,9 +316,10 @@ body {
             border-radius: 21px;
             display: inline-block;
             padding: 12px;
-            margin-top: 40px;  
+            margin-top: 40px;
         }
     }
+}
 
     .footer {
         background-color: navy;
@@ -322,8 +329,8 @@ body {
         // padding: 100px 0 30px;
         height: 400px;
         margin-top: 100px;
-
-    .foot-p{
+        
+        .foot-p{
         display: inline-block;
         color: white;
         font-size: 15px;
@@ -338,13 +345,17 @@ body {
         margin-left: 70px;
         margin-right: 80px;
     }
-    .div-foot {
-        display: flex;
-        justify-content: space-between;
-    }
-    .cool {
-        padding-top: 30px;
-    }
+
+        .div-foot {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+            .cool {
+                padding-top: 30px;
+            }
+    
+   
     
     .foot-get_link {
         display: inline-block;
@@ -415,8 +426,14 @@ body {
         align-content: center;
         line-height: 25px;
         font-size: 25px;
-        ;
+        color: rgb(223, 113, 131);
     }
 }
 
+}
+@media screen and (min-width: 768) {
+    .degree-section {
+        display: flex;
+        flex-wrap: wrap;
+    }   
 }
